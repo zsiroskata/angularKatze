@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "name": "Cirmi",
+    "breed": "British Shorthair",
+    "age": 3,
+    "color": "szürke",
+    "vaccinated": true,
+    "imageUrl": "/assets/images/cirmi.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Mici",
+    "breed": "Maine Coon",
+    "age": 2,
+    "color": "barna",
+    "vaccinated": false,
+    "imageUrl": "/assets/images/mici.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Maszat",
+    "breed": "Sziámi",
+    "age": 5,
+    "color": "fehér",
+    "vaccinated": true,
+    "imageUrl": "/assets/images/maszat.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Foltos",
+    "breed": "Házi cica",
+    "age": 1,
+    "color": "fekete-fehér",
+    "vaccinated": true,
+    "imageUrl": "/assets/images/foltos.jpg"
+  }
+]

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html ng-app="catApp">
+<head>
+  <meta charset="utf-8">
+  <title>Cicás adatbázis</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+  <script src="app.js"></script>
+</head>
+<body ng-controller="CatController">
+  <h1>Cicák listája</h1>
+  <table>
+    <tr>
+        <th>név</th>
+        <th>év</th>
+        <th>fajta</th>
+        <th>Szín</th>
+        <th>Oltva</th>
+    </tr>
+    <tr ng-repeat="cat in cats">
+        <td>{{ cat.name }}</td>
+        <td>{{ cat.age }}</td>
+        <td>{{ cat.breed }}</td>
+        <td>{{ cat.color }}</td>
+        <td>{{ cat.vaccinated ? 'Igen' : 'Nem' }}</td>
+    </tr>
+  </table>
+
+  <script>
+    var app = angular.module('catApp', []);
+
+    app.controller('CatController', function($scope, $http) {
+    $http.get('cica.json').then(function(response) {
+        $scope.cats = response.data;
+    });
+    });
+
+  </script>
+</body>
+</html>
